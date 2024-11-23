@@ -12,6 +12,7 @@ import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,6 +20,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class DifficulteyeBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_BlackTerracotta=
             createkey("add_black_terracotta");
+    public static final ResourceKey<BiomeModifier> ADD_TerracottaTree=
+            createkey("add_terracottatree");
     private static ResourceKey<BiomeModifier> createkey(String name){
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS,
                 new ResourceLocation(Difficulteye.MODID,name));
@@ -29,6 +32,10 @@ public class DifficulteyeBiomeModifier {
         context.register(ADD_BlackTerracotta,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD), HolderSet.direct(placedFeature.getOrThrow(DifficulteyeOrePlacement.BlackTerracotta)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
+        context.register(ADD_TerracottaTree,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS), HolderSet.direct(placedFeature.getOrThrow(DifficulteyeOrePlacement.TerracottaTree)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
         ));
 
 

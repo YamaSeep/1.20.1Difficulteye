@@ -29,8 +29,8 @@ public class DifficulteyeOrePlacement  {
                 commonOrePlacement(7, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
         PlacementUtils.register(context, TerracottaTree,
                 configuredFeatures.getOrThrow(DifficulteyeFeature.TerracottaTree_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(10,0.1f,1), BlockRegistry.TerracottaTreeSapling.get()
-                        ));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1,0.05f,0), BlockRegistry.TerracottaTreeSapling.get()
+                ));
 
     }
 

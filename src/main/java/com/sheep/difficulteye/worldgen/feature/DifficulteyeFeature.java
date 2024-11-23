@@ -37,10 +37,10 @@ public class DifficulteyeFeature {
         FeatureUtils.register(context, BlackTettacotta_KEY, Feature.ORE, new OreConfiguration(blackterracotta,9));
         FeatureUtils.register(context, TerracottaTree_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.GRAY_TERRACOTTA.defaultBlockState()),
-                new StraightTrunkPlacer(3,3,2),
+                new StraightTrunkPlacer(3,2,0),
                 BlockStateProvider.simple(Blocks.GREEN_TERRACOTTA.defaultBlockState()),
-                new BlobFoliagePlacer(ConstantInt.of(3),ConstantInt.of(2),3),
-                new TwoLayersFeatureSize(1,0,2)).build()
+                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),3),
+                new TwoLayersFeatureSize(1,0,1)).build()
         );
 
     }

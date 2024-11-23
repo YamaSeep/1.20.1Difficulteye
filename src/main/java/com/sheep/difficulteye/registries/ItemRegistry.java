@@ -57,9 +57,6 @@ public class ItemRegistry {
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN_CENTER = itemRegistryObject("totem_of_elder_gardian_center",16,Rarity.UNCOMMON);
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN_LEFT = itemRegistryObject("totem_of_elder_gardian_left",16,Rarity.UNCOMMON);
 
-    public static final RegistryObject<Item> TerracottaTreeSapling = itemRegistryObject("aaa",16,Rarity.UNCOMMON);
-
-
     public static final RegistryObject<Item>[] Eyes = new RegistryObject[]{
             EYE_OF_ARTIFACT,
             EYE_OF_COLOR,
@@ -83,7 +80,6 @@ public class ItemRegistry {
             TOTEM_OF_WARDEN,TOTEM_OF_ELDER_GARDIAN,TOTEM_OF_WITHER,TOTEM_OF_PIGLINBRUTE,
 
             TOTEM_OF_ELDER_GARDIAN_RIGHT,TOTEM_OF_ELDER_GARDIAN_LEFT,TOTEM_OF_ELDER_GARDIAN_CENTER
-            ,TerracottaTreeSapling
     };
 
     private static RegistryObject<Item> itemRegistryObject(String name, int stack){

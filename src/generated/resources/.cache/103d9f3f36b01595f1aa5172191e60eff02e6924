@@ -1,5 +1,7 @@
-// 1.20.1	2024-11-23T16:34:14.3010401	Registries
+// 1.20.1	2024-11-23T17:39:03.9126967	Registries
 edb8c0101b9c5063ebc4c4b1f2077baed1afea97 data/difficulteye/forge/biome_modifier/add_black_terracotta.json
+0a115ffa15915757de27369a4b39a44fa6a50d91 data/difficulteye/forge/biome_modifier/add_terracottatree.json
 3f607d6ff670d1e4ffc5b3444b24a4bf646b996b data/difficulteye/worldgen/configured_feature/black_terracotta.json
-dd5339cc862bb32c89fc726dc25cae28103c36ea data/difficulteye/worldgen/configured_feature/terracottatree.json
+91c3cb0cf26527c3bf8d4f931a51139bf900d315 data/difficulteye/worldgen/configured_feature/terracottatree.json
 f985df9698927392013e2411ebca9f16fd681ca6 data/difficulteye/worldgen/placed_feature/black_terracotta.json
+96d8b7ddcfd3693ea031fb0ea6d01c7c2f7440c5 data/difficulteye/worldgen/placed_feature/terracottatree.json
