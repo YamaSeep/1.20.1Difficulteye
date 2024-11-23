@@ -7,9 +7,9 @@ import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
-public class TerracottaTreeLime extends AbstractTreeGrower {
+public class TerracottaTreeGreen extends AbstractTreeGrower {
     @Override
     protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource randomSource, boolean b) {
-        return DifficulteyeFeature.TerracottaLimeTree_KEY;
+        return DifficulteyeFeature.TerracottaGreenTree_KEY;
     }
 }

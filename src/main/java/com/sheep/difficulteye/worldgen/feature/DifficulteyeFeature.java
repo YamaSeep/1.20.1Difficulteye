@@ -23,7 +23,8 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import java.util.List;
 public class DifficulteyeFeature {
     public static final ResourceKey<ConfiguredFeature<?,?>> BlackTettacotta_KEY =createKey("black_terracotta");
-    public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaTree_KEY =createKey("terracottatree");
+    public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaLimeTree_KEY =createKey("terracottalimetree");
+    public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaGreenTree_KEY =createKey("terracottagreentree");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context){
         RuleTest stone=new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -35,9 +36,16 @@ public class DifficulteyeFeature {
         );
 
         FeatureUtils.register(context, BlackTettacotta_KEY, Feature.ORE, new OreConfiguration(blackterracotta,9));
-        FeatureUtils.register(context, TerracottaTree_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
+        FeatureUtils.register(context, TerracottaLimeTree_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.GRAY_TERRACOTTA.defaultBlockState()),
-                new StraightTrunkPlacer(3,2,0),
+                new StraightTrunkPlacer(4,2,0),
+                BlockStateProvider.simple(Blocks.LIME_TERRACOTTA.defaultBlockState()),
+                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),3),
+                new TwoLayersFeatureSize(1,0,1)).build()
+        );
+        FeatureUtils.register(context, TerracottaGreenTree_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.GRAY_TERRACOTTA.defaultBlockState()),
+                new StraightTrunkPlacer(4,2,0),
                 BlockStateProvider.simple(Blocks.GREEN_TERRACOTTA.defaultBlockState()),
                 new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),3),
                 new TwoLayersFeatureSize(1,0,1)).build()
