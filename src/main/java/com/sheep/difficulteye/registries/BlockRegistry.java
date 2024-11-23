@@ -2,6 +2,7 @@ package com.sheep.difficulteye.registries;
 
 import com.sheep.difficulteye.blockInfo.*;
 import com.sheep.difficulteye.main.Difficulteye;
+import com.sheep.difficulteye.worldgen.tree.TerracottaTreeLime;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;
@@ -41,9 +42,9 @@ public class BlockRegistry {
     public static final RegistryObject<Block> UnbreakCobblestoneStairs = BLOCKS.register("unbreakcobblestone_stairs", () -> new StairBlock(Blocks.COBBLESTONE::defaultBlockState, BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).strength(-1, 1500)));
     public static final RegistryObject<Block> UnbreakRedCarpet = BLOCKS.register("unbreakredcarpet", () -> new WoolCarpetBlock(DyeColor.RED,BlockBehaviour.Properties.copy(Blocks.RED_CARPET).strength(-1, 1500).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> UnbreakWhiteCarpet = BLOCKS.register("unbreakwhitecarpet", () -> new WoolCarpetBlock(DyeColor.WHITE,BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET).strength(-1, 1500).requiresCorrectToolForDrops()));
-
     public static final RegistryObject<Block> UnbreakNetherbrick = BLOCKS.register("unbreaknetherbrick", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(-1,1500)));
 
+    public static final RegistryObject<Block> TerracottaTreeSapling =BLOCKS.register("terracottatreesapling",()->new SaplingBlock(new TerracottaTreeLime(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     private static RotatedPillarBlock log(MapColor p_285370_, MapColor p_285126_) {
         return new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? p_285370_ : p_285126_).instrument(NoteBlockInstrument.BASS).strength(-1,1500).sound(SoundType.WOOD));
     }

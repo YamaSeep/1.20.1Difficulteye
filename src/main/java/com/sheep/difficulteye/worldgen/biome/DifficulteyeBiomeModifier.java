@@ -17,8 +17,8 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class DifficulteyeBiomeModifier {
-    public static final ResourceKey<BiomeModifier> ADD_GrayTerracotta=
-            createkey("add_gray_terracotta");
+    public static final ResourceKey<BiomeModifier> ADD_BlackTerracotta=
+            createkey("add_black_terracotta");
     private static ResourceKey<BiomeModifier> createkey(String name){
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS,
                 new ResourceLocation(Difficulteye.MODID,name));
@@ -26,8 +26,8 @@ public class DifficulteyeBiomeModifier {
     public static void bootstrap(BootstapContext<BiomeModifier> context){
         HolderGetter<PlacedFeature> placedFeature=context.lookup(Registries.PLACED_FEATURE);
         HolderGetter<Biome> biomes=context.lookup(Registries.BIOME);
-        context.register(ADD_GrayTerracotta,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD), HolderSet.direct(placedFeature.getOrThrow(DifficulteyeOrePlacement.GrayTerracotta)),
+        context.register(ADD_BlackTerracotta,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD), HolderSet.direct(placedFeature.getOrThrow(DifficulteyeOrePlacement.BlackTerracotta)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
 
