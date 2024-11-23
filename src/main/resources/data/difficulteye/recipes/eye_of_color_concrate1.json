@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abc",
+    "dEe",
+    "fgh"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "a": {
+      "item": "minecraft:white_concrete"
+    },
+    "b": {
+      "item": "minecraft:orange_concrete"
+    },
+    "c": {
+      "item": "minecraft:magenta_concrete"
+    },
+    "d": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "e": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "f": {
+      "item": "minecraft:lime_concrete"
+    },
+    "g": {
+      "item": "minecraft:pink_concrete"
+    },
+    "h": {
+      "item": "minecraft:gray_concrete"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_color_concrate1",
+    "count": 1
+  }
+}

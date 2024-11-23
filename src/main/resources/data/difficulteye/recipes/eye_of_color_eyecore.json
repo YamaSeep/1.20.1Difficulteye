@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#GP",
+    "RER",
+    "PG#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blue_stained_glass_pane"
+    },
+    "G": {
+      "item": "minecraft:green_stained_glass_pane"
+    },
+    "P": {
+      "item": "minecraft:purple_stained_glass_pane"
+    },
+    "R": {
+      "item": "minecraft:red_stained_glass_pane"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_color_eyecore",
+    "count": 1
+  }
+}

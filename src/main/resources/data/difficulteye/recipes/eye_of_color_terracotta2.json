@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abc",
+    "dEe",
+    "fgh"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "a": {
+      "item": "minecraft:cyan_terracotta"
+    },
+    "b": {
+      "item": "minecraft:purple_terracotta"
+    },
+    "c": {
+      "item": "minecraft:blue_terracotta"
+    },
+    "d": {
+      "item": "minecraft:brown_terracotta"
+    },
+    "e": {
+      "item": "minecraft:green_terracotta"
+    },
+    "f": {
+      "item": "minecraft:red_terracotta"
+    },
+    "g": {
+      "item": "minecraft:black_terracotta"
+    },
+    "h": {
+      "item": "minecraft:light_gray_terracotta"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_color_terracotta2",
+    "count": 1
+  }
+}

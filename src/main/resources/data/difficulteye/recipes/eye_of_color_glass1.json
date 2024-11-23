@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abc",
+    "dEe",
+    "fgh"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "a": {
+      "item": "minecraft:white_stained_glass"
+    },
+    "b": {
+      "item": "minecraft:orange_stained_glass"
+    },
+    "c": {
+      "item": "minecraft:magenta_stained_glass"
+    },
+    "d": {
+      "item": "minecraft:light_blue_stained_glass"
+    },
+    "e": {
+      "item": "minecraft:yellow_stained_glass"
+    },
+    "f": {
+      "item": "minecraft:lime_stained_glass"
+    },
+    "g": {
+      "item": "minecraft:pink_stained_glass"
+    },
+    "h": {
+      "item": "minecraft:gray_stained_glass"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_color_glass1",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "difficulteye:block/unbreakglass"
+    },"facing=north": {
+      "model": "difficulteye:block/unbreakglass",
+      "y": 90
+    },"facing=south": {
+      "model": "difficulteye:block/unbreakglass",
+      "y": 90
+    },"facing=west": {
+      "model": "difficulteye:block/unbreakglass"
+    }
+  }
+}

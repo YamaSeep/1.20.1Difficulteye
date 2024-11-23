@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "difficulteye:endframe_artifact",
+    "difficulteye:endframe_color",
+    "difficulteye:endframe_creature",
+    "difficulteye:endframe_dungeon",
+    "difficulteye:endframe_element",
+    "difficulteye:endframe_food",
+    "difficulteye:endframe_magic",
+    "difficulteye:endframe_nature",
+    "difficulteye:endframe_potion",
+    "difficulteye:endframe_season",
+    "difficulteye:endframe_sea",
+    "difficulteye:endframe_technology"
+  ]
+}

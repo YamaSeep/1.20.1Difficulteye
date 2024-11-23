@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "difficulteye:block/unbreakdarkoaklog_top",
+    "side": "difficulteye:block/unbreakdarkoaklog"
+  }
+}

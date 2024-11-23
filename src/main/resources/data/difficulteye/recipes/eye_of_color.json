@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "d": {
+      "item": "difficulteye:eye_of_color_concrate1"
+    },
+    "b": {
+      "item": "difficulteye:eye_of_color_concrate2"
+    },
+    "f": {
+      "item": "difficulteye:eye_of_color_glass1"
+    },
+    "h": {
+      "item": "difficulteye:eye_of_color_glass2"
+    },
+    "a": {
+      "item": "difficulteye:eye_of_color_terracotta1"
+    },
+    "c": {
+      "item": "difficulteye:eye_of_color_terracotta2"
+    },
+    "g": {
+      "item": "difficulteye:eye_of_color_wool1"
+    },
+    "i": {
+      "item": "difficulteye:eye_of_color_wool2"
+    },
+    "e": {
+      "item": "difficulteye:eye_of_color_eyecore"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_color",
+    "count": 1
+  }
+}

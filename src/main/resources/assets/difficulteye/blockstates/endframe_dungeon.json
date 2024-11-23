@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "endframe_dungeon=false,facing=east": {
+      "model": "difficulteye:block/endframe_dungeon",
+      "y": 270
+    },
+    "endframe_dungeon=false,facing=north": {
+      "model": "difficulteye:block/endframe_dungeon",
+      "y": 180
+    },
+    "endframe_dungeon=false,facing=south": {
+      "model": "difficulteye:block/endframe_dungeon"
+    },
+    "endframe_dungeon=false,facing=west": {
+      "model": "difficulteye:block/endframe_dungeon",
+      "y": 90
+    },
+    "endframe_dungeon=true,facing=east": {
+      "model": "difficulteye:block/endframe_dungeon_filled",
+      "y": 270
+    },
+    "endframe_dungeon=true,facing=north": {
+      "model": "difficulteye:block/endframe_dungeon_filled",
+      "y": 180
+    },
+    "endframe_dungeon=true,facing=south": {
+      "model": "difficulteye:block/endframe_dungeon_filled"
+    },
+    "endframe_dungeon=true,facing=west": {
+      "model": "difficulteye:block/endframe_dungeon_filled",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "difficulteye:endframe_color"
+    },
+    "title": {
+      "translate": "advancement.difficulteye.root.title"
+    },
+    "description": {
+      "translate": "advancement.difficulteye.root.description"
+    },
+    "background": "minecraft:textures/block/stone.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

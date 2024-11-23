@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/iron_ingot",
+  "textures": {
+    "layer0": "difficulteye:item/eye_of_color_terracotta2"
+  }
+}

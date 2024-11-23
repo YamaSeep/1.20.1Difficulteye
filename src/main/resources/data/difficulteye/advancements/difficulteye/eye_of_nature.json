@@ -1,0 +1,41 @@
+{
+  "parent": "difficulteye:difficulteye/root",
+  "criteria": {
+    "eye_of_nature": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "difficulteye:eye_of_nature"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "sends_telemetry_event": true,
+  "rewards": {
+    "function": "difficulteye:custom_sound_effect"
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.difficulteye.eye_of_nature.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "difficulteye:eye_of_nature"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.difficulteye.eye_of_nature.title"
+    }
+  },
+  "requirements": [
+    [
+      "eye_of_nature"
+    ]
+  ]
+}

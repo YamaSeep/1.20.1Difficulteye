@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "abc",
+    "dEe",
+    "fgh"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "a": {
+      "item": "minecraft:cyan_wool"
+    },
+    "b": {
+      "item": "minecraft:purple_wool"
+    },
+    "c": {
+      "item": "minecraft:blue_wool"
+    },
+    "d": {
+      "item": "minecraft:brown_wool"
+    },
+    "e": {
+      "item": "minecraft:green_wool"
+    },
+    "f": {
+      "item": "minecraft:red_wool"
+    },
+    "g": {
+      "item": "minecraft:black_wool"
+    },
+    "h": {
+      "item": "minecraft:light_gray_wool"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_color_wool2",
+    "count": 1
+  }
+}

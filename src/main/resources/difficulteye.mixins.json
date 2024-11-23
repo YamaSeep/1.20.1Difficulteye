@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.sheep.difficulteye.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "difficulteye.refmap.json",
+  "mixins": [
+    "CustomStrongHolder",
+    "LivingEntityMixin",
+    "UnbreakSructureMixin",
+    "WoodMansionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8",
+  "client": [
+    "ClientPlayNetworkHandlerMixin"
+  ]
+}

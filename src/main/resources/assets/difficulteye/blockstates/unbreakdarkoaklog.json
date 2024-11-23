@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "difficulteye:block/unbreakdarkoaklog_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "difficulteye:block/unbreakdarkoaklog"
+    },
+    "axis=z": {
+      "model": "difficulteye:block/unbreakdarkoaklog_horizontal",
+      "x": 90
+    }
+  }
+}

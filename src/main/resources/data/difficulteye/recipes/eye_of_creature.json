@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TPE",
+    "KeB",
+    "WSu"
+  ],
+  "key": {
+    "e": {
+      "item": "minecraft:ender_eye"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "E": {
+      "item": "difficulteye:totem_of_elder_gardian"
+    },
+    "W": {
+      "item": "difficulteye:totem_of_warden"
+    },
+    "u": {
+      "item": "difficulteye:totem_of_wither"
+    },
+    "P": {
+      "item": "difficulteye:totem_of_piglinbrute"
+    },
+    "B": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "K": {
+      "item": "minecraft:zombie_head"
+    },
+    "S": {
+      "item": "minecraft:creeper_head"
+    }
+  },
+  "result": {
+    "item": "difficulteye:eye_of_creature",
+    "count": 1
+  }
+}

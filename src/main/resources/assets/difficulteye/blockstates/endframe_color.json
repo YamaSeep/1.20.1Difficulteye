@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "endframe_color=false,facing=east": {
+      "model": "difficulteye:block/endframe_color",
+      "y": 270
+    },
+    "endframe_color=false,facing=north": {
+      "model": "difficulteye:block/endframe_color",
+      "y": 180
+    },
+    "endframe_color=false,facing=south": {
+      "model": "difficulteye:block/endframe_color"
+    },
+    "endframe_color=false,facing=west": {
+      "model": "difficulteye:block/endframe_color",
+      "y": 90
+    },
+    "endframe_color=true,facing=east": {
+      "model": "difficulteye:block/endframe_color_filled",
+      "y": 270
+    },
+    "endframe_color=true,facing=north": {
+      "model": "difficulteye:block/endframe_color_filled",
+      "y": 180
+    },
+    "endframe_color=true,facing=south": {
+      "model": "difficulteye:block/endframe_color_filled"
+    },
+    "endframe_color=true,facing=west": {
+      "model": "difficulteye:block/endframe_color_filled",
+      "y": 90
+    }
+  }
+}

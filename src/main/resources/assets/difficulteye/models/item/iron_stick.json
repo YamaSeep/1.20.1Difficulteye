@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/stick",
+  "textures": {
+    "layer0": "difficulteye:item/iron_stick"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NS#"
+    ],
+    "key": {
+        "#": {
+            "item": "difficulteye:totem_of_elder_gardian_right"
+        },
+        "S": {
+            "item": "difficulteye:totem_of_elder_gardian_center"
+        },
+        "N": {
+            "item": "difficulteye:totem_of_elder_gardian_left"
+        }
+    },
+    "result": {
+        "item": "difficulteye:totem_of_elder_gardian",
+        "count": 1
+    }
+}
