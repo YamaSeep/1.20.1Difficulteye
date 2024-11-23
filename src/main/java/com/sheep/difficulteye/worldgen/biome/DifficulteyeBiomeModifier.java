@@ -25,9 +25,9 @@ public class DifficulteyeBiomeModifier {
     }
     public static void bootstrap(BootstapContext<BiomeModifier> context){
         HolderGetter<PlacedFeature> placedFeature=context.lookup(Registries.PLACED_FEATURE);
-        HolderGetter<Biome> biones=context.lookup(Registries.BIOME);
+        HolderGetter<Biome> biomes=context.lookup(Registries.BIOME);
         context.register(ADD_GrayTerracotta,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biones.getOrThrow(BiomeTags.IS_OVERWORLD), HolderSet.direct(placedFeature.getOrThrow(DifficulteyeOrePlacement.ORE_Difficultreye)),
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD), HolderSet.direct(placedFeature.getOrThrow(DifficulteyeOrePlacement.GrayTerracotta)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
 

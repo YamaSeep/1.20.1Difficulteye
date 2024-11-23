@@ -16,7 +16,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class DifficulteyeWorldGenProvider extends DatapackBuiltinEntriesProvider {
     private static final RegistrySetBuilder BUILDER=new RegistrySetBuilder()
-            .add(Registries.CONFIGURED_FEATURE, DifficulteyeFeature::bootsrap)
+            .add(Registries.CONFIGURED_FEATURE, DifficulteyeFeature::bootstrap)
             .add(Registries.PLACED_FEATURE, DifficulteyeOrePlacement::bootstrap)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, DifficulteyeBiomeModifier::bootstrap);
 

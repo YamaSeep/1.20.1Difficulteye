@@ -15,24 +15,20 @@ import net.minecraft.world.level.levelgen.placement.*;
 import java.util.List;
 
 public class DifficulteyeOrePlacement  {
-    public static final ResourceKey<PlacedFeature> ORE_Difficultreye =
-            createKey("ore_difficultreye");
+    public static final ResourceKey<PlacedFeature> GrayTerracotta = createKey("gray_terracotta");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         // 鉱石の配置情報を設定
-        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures =
-                context.lookup(Registries.CONFIGURED_FEATURE);
+        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        PlacementUtils.register(context, ORE_Difficultreye,
-                configuredFeatures.getOrThrow(DifficulteyeFeature.ORE_KEY),
-                commonOrePlacement(90,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64),
+        PlacementUtils.register(context, GrayTerracotta,
+                configuredFeatures.getOrThrow(DifficulteyeFeature.GrayTettacotta_KEY),
+                commonOrePlacement(90, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(0))));
     }
 
     private static ResourceKey<PlacedFeature> createKey(String name) {
-        return ResourceKey.create(Registries.PLACED_FEATURE,
-                new ResourceLocation(Difficulteye.MODID, name));
+        return ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(Difficulteye.MODID, name));
     }
 
     private static List<PlacementModifier> orePlacement(PlacementModifier pCountPlacement, PlacementModifier pHeightRange) {

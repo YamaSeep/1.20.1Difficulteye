@@ -17,16 +17,18 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import java.util.List;
 
 public class DifficulteyeFeature {
-    public static final ResourceKey<ConfiguredFeature<?,?>> ORE_KEY=createKey("gray_terracotta");
+    public static final ResourceKey<ConfiguredFeature<?,?>> GrayTettacotta_KEY =createKey("gray_terracotta");
 
-    public static void bootsrap(BootstapContext<ConfiguredFeature<?,?>> context){
+    public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context){
         RuleTest stone=new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslate=new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        List<OreConfiguration.TargetBlockState> Ores=List.of(
-                OreConfiguration.target(stone, Blocks.GRAY_TERRACOTTA.defaultBlockState()),
-                OreConfiguration.target(deepslate, Blocks.GRAY_TERRACOTTA.defaultBlockState()));
-        FeatureUtils.register(context,ORE_KEY, Feature.ORE,
-                new OreConfiguration(Ores,9));
+
+        List<OreConfiguration.TargetBlockState> grayterracotta=List.of(
+                OreConfiguration.target(stone,Blocks.GRAY_TERRACOTTA.defaultBlockState()),
+                OreConfiguration.target(deepslate,Blocks.GRAY_TERRACOTTA.defaultBlockState())
+        );
+
+        FeatureUtils.register(context, GrayTettacotta_KEY, Feature.ORE, new OreConfiguration(grayterracotta,9));
     }
 
     public static ResourceKey<ConfiguredFeature<?,?>> createKey(String name){
