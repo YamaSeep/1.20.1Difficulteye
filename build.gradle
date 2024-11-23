@@ -55,7 +55,7 @@ minecraft {
             property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'difficulteye', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
             mods { difficulteye { source sourceSets.main } }
         }
     }
