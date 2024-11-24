@@ -1,6 +1,7 @@
 package com.sheep.difficulteye.worldgen.feature;
 
 import com.sheep.difficulteye.main.Difficulteye;
+import com.sheep.difficulteye.worldgen.tree.custom.FlowerFoliagePlacer;
 import com.sheep.difficulteye.worldgen.tree.custom.FlowerTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -53,10 +54,10 @@ public class DifficulteyeFeature {
                 new TwoLayersFeatureSize(1,0,1)).build()
         );
         FeatureUtils.register(context, PinkFlower_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(Blocks.STONE.defaultBlockState()),
+                BlockStateProvider.simple(Blocks.LIME_TERRACOTTA.defaultBlockState()),
                 new FlowerTrunkPlacer(6,1,1),
-                BlockStateProvider.simple(Blocks.OAK_LEAVES.defaultBlockState()),
-                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),3),
+                BlockStateProvider.simple(Blocks.LIGHT_BLUE_TERRACOTTA.defaultBlockState()),
+                new FlowerFoliagePlacer(ConstantInt.of(1),ConstantInt.of(0),1),
                 new TwoLayersFeatureSize(1,0,1)).build()
         );
 

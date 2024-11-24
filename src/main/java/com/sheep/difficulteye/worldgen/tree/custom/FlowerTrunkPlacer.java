@@ -59,6 +59,6 @@ public class FlowerTrunkPlacer extends TrunkPlacer {
                 }
             }
         }
-        return ImmutableList.of(new FoliagePlacer.FoliageAttachment(pPos.offset(0,height,0),0,false));
+        return ImmutableList.of(new FoliagePlacer.FoliageAttachment(pPos.offset(0,height-3,0),0,false));
     }
 }

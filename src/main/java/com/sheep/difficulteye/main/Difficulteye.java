@@ -5,6 +5,7 @@ import com.sheep.difficulteye.registries.BlockRegistry;
 import com.sheep.difficulteye.registries.CreativeTabRegistry;
 import com.sheep.difficulteye.registries.EntityRegistry;
 import com.sheep.difficulteye.registries.ItemRegistry;
+import com.sheep.difficulteye.worldgen.tree.ModFoliagePlacers;
 import com.sheep.difficulteye.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -55,6 +56,7 @@ public class Difficulteye {
          // Register ourselves for server and other game events we are interested in
          MinecraftForge.EVENT_BUS.register(this);
          ModTrunkPlacerTypes.register(modEventBus);
+         ModFoliagePlacers.register(modEventBus);
      }
 
 

@@ -1,10 +1,10 @@
-// 1.20.1	2024-11-24T14:24:27.2315012	Registries
+// 1.20.1	2024-11-24T19:34:50.7072521	Registries
 edb8c0101b9c5063ebc4c4b1f2077baed1afea97 data/difficulteye/forge/biome_modifier/add_black_terracotta.json
 c645ce2b06364c1086c143888671a183e7110b79 data/difficulteye/forge/biome_modifier/add_pink_flower.json
 4ca757ea0b332102a92935677fc8fee44cbdfff0 data/difficulteye/forge/biome_modifier/add_terracottalimetree.json
 d8d37a2103d54c8d71be9b5ad47e7cd28838c0ce data/difficulteye/forge/biome_modifier/terracottagreentree.json
 3f607d6ff670d1e4ffc5b3444b24a4bf646b996b data/difficulteye/worldgen/configured_feature/black_terracotta.json
-08ed4cfb603f35ad724235ca1a8853920162e2b9 data/difficulteye/worldgen/configured_feature/pink_flower.json
+c1b83d136d8222fface133779bc2017a056c00e1 data/difficulteye/worldgen/configured_feature/pink_flower.json
 bb0c4fddd63797e4f9886b0f47b9ad977f4f0ad9 data/difficulteye/worldgen/configured_feature/terracottagreentree.json
 a9a8c3d1f037fa6b932d977daa5a5fd2acddcecb data/difficulteye/worldgen/configured_feature/terracottalimetree.json
 362a1b2ecae6ce373e45d8eae7e6d8716a74aba6 data/difficulteye/worldgen/placed_feature/black_terracotta.json

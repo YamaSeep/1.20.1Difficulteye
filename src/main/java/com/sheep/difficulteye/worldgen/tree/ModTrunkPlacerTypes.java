@@ -13,7 +13,7 @@ public class ModTrunkPlacerTypes {
             DeferredRegister.create(Registries.TRUNK_PLACER_TYPE, Difficulteye.MODID);
 
     public static final RegistryObject<TrunkPlacerType<FlowerTrunkPlacer>> Flower_Placer =
-            Trunk_Placer.register("pink_flower",()->new TrunkPlacerType<>(FlowerTrunkPlacer.CODEC));
+            Trunk_Placer.register("flower_placer",()->new TrunkPlacerType<>(FlowerTrunkPlacer.CODEC));
 
     public static void register(IEventBus eventBus){
         Trunk_Placer.register(eventBus);
