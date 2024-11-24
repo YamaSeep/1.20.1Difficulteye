@@ -2,6 +2,8 @@ package com.sheep.difficulteye.registries;
 
 import com.sheep.difficulteye.blockInfo.*;
 import com.sheep.difficulteye.main.Difficulteye;
+import com.sheep.difficulteye.worldgen.tree.PinkFlower;
+import com.sheep.difficulteye.worldgen.tree.TerracottaTreeGreen;
 import com.sheep.difficulteye.worldgen.tree.TerracottaTreeLime;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
@@ -45,7 +47,8 @@ public class BlockRegistry {
     public static final RegistryObject<Block> UnbreakNetherbrick = BLOCKS.register("unbreaknetherbrick", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(-1,1500)));
 
     public static final RegistryObject<Block> TerracottaTreeLimeSapling =BLOCKS.register("terracottalimetreesapling",()->new SaplingBlock(new TerracottaTreeLime(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> TerracottaTreeGreenSapling =BLOCKS.register("terracottagreentreesapling",()->new SaplingBlock(new TerracottaTreeLime(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> TerracottaTreeGreenSapling =BLOCKS.register("terracottagreentreesapling",()->new SaplingBlock(new TerracottaTreeGreen(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> PinkFlowerSapling =BLOCKS.register("pinkflowersapling",()->new SaplingBlock(new PinkFlower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static RotatedPillarBlock log(MapColor p_285370_, MapColor p_285126_) {
         return new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? p_285370_ : p_285126_).instrument(NoteBlockInstrument.BASS).strength(-1,1500).sound(SoundType.WOOD));

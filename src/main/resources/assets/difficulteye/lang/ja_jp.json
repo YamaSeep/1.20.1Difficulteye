@@ -14,7 +14,9 @@
     "item.difficulteye.eye_of_creature": "クリーチャーアイ",
     "item.difficulteye.eye_of_technology": "テクノロジーアイ",
 
-    "advancements.difficulteye.eye_of_color.title": "カラフルな目",
+    "advancements.difficulteye.root.title": "エンドへの第１歩！",
+    "advancements.difficulteye.root.description": "エンダーアイを作成する",
+    "advancements.difficulteye.eye_of_color.title": "カラーコンタクト",
     "advancements.difficulteye.eye_of_color.description": "カラーアイを作成する",
     "advancements.difficulteye.eye_of_potion.title": "",
     "advancements.difficulteye.eye_of_potion.description": "ポーションアイを作成する",

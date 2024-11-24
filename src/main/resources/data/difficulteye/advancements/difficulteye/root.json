@@ -4,19 +4,28 @@
       "item": "difficulteye:endframe_color"
     },
     "title": {
-      "translate": "advancement.difficulteye.root.title"
+      "translate": "advancements.difficulteye.root.title"
     },
     "description": {
-      "translate": "advancement.difficulteye.root.description"
+      "translate": "advancements.difficulteye.root.description"
     },
     "background": "minecraft:textures/block/stone.png",
-    "show_toast": false,
-    "announce_to_chat": false,
+    "show_toast": true,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
     "root": {
-      "trigger": "minecraft:tick"
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ender_eye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   }
 }

@@ -12,6 +12,7 @@ import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +21,8 @@ public class DifficulteyeBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_BlackTerracotta= createkey("add_black_terracotta");
     public static final ResourceKey<BiomeModifier> ADD_TerracottaLimeTree = createkey("add_terracottalimetree");
     public static final ResourceKey<BiomeModifier> ADD_TerracottaGreenTree = createkey("terracottagreentree");
+    public static final ResourceKey<BiomeModifier> ADD_PinkFlower =createkey("add_pink_flower");
+
     private static ResourceKey<BiomeModifier> createkey(String name){
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS,
                 new ResourceLocation(Difficulteye.MODID,name));
@@ -37,6 +40,10 @@ public class DifficulteyeBiomeModifier {
         ));
         context.register(ADD_TerracottaGreenTree,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_FOREST), HolderSet.direct(placedFeature.getOrThrow(DifficulteyePlacement.TerracottaGreenTree)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+        context.register(ADD_PinkFlower,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS), HolderSet.direct(placedFeature.getOrThrow(DifficulteyePlacement.PinkFlower)),
                 GenerationStep.Decoration.VEGETAL_DECORATION
         ));
 

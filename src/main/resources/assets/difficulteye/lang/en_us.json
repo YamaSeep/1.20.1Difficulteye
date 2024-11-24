@@ -14,6 +14,8 @@
   "item.difficulteye.eye_of_creature": "eye of creature",
   "item.difficulteye.eye_of_technology": "eye of technology",
 
+  "advancements.difficulteye.root.title": "The First Step to the End!",
+  "advancements.difficulteye.root.description": "Craft ender eye",
   "advancements.difficulteye.eye_of_color.title": "",
   "advancements.difficulteye.eye_of_color.description": "Craft the eye of color",
   "advancements.difficulteye.eye_of_potion.title": "",

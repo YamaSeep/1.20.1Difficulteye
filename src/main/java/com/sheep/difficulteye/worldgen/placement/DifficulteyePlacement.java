@@ -21,6 +21,7 @@ public class DifficulteyePlacement {
     public static final ResourceKey<PlacedFeature> BlackTerracotta = createKey("black_terracotta");
     public static final ResourceKey<PlacedFeature> TerracottaLimeTree =createKey("terracottalimetree");
     public static final ResourceKey<PlacedFeature> TerracottaGreenTree =createKey("terracottagreentree");
+    public static final ResourceKey<PlacedFeature> PinkFlower =createKey("pink_flower");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         // 鉱石の配置情報を設定
@@ -28,7 +29,7 @@ public class DifficulteyePlacement {
 
         PlacementUtils.register(context, BlackTerracotta,
                 configuredFeatures.getOrThrow(DifficulteyeFeature.BlackTettacotta_KEY),
-                commonOrePlacement(7, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
+                commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-20))));
         PlacementUtils.register(context, TerracottaLimeTree,
                 configuredFeatures.getOrThrow(DifficulteyeFeature.TerracottaLimeTree_KEY),
                 BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(10),
@@ -37,6 +38,10 @@ public class DifficulteyePlacement {
                 configuredFeatures.getOrThrow(DifficulteyeFeature.TerracottaGreenTree_KEY),
                 BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(10),
                 PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.TerracottaTreeGreenSapling.get().defaultBlockState(), BlockPos.ZERO)));
+        PlacementUtils.register(context, PinkFlower,
+                configuredFeatures.getOrThrow(DifficulteyeFeature.PinkFlower_KEY),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),
+                PlacementUtils.countExtra(10,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.PinkFlowerSapling.get().defaultBlockState(), BlockPos.ZERO)));
 
     }
 

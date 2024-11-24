@@ -1,6 +1,7 @@
 package com.sheep.difficulteye.worldgen.feature;
 
 import com.sheep.difficulteye.main.Difficulteye;
+import com.sheep.difficulteye.worldgen.tree.custom.FlowerTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -25,6 +26,7 @@ public class DifficulteyeFeature {
     public static final ResourceKey<ConfiguredFeature<?,?>> BlackTettacotta_KEY =createKey("black_terracotta");
     public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaLimeTree_KEY =createKey("terracottalimetree");
     public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaGreenTree_KEY =createKey("terracottagreentree");
+    public static final ResourceKey<ConfiguredFeature<?,?>> PinkFlower_KEY =createKey("pink_flower");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context){
         RuleTest stone=new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -47,6 +49,13 @@ public class DifficulteyeFeature {
                 BlockStateProvider.simple(Blocks.GRAY_TERRACOTTA.defaultBlockState()),
                 new StraightTrunkPlacer(4,2,0),
                 BlockStateProvider.simple(Blocks.GREEN_TERRACOTTA.defaultBlockState()),
+                new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),3),
+                new TwoLayersFeatureSize(1,0,1)).build()
+        );
+        FeatureUtils.register(context, PinkFlower_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.STONE.defaultBlockState()),
+                new FlowerTrunkPlacer(6,1,1),
+                BlockStateProvider.simple(Blocks.OAK_LEAVES.defaultBlockState()),
                 new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),3),
                 new TwoLayersFeatureSize(1,0,1)).build()
         );
