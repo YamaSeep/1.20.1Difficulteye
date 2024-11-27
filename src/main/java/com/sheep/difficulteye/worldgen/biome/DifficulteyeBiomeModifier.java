@@ -11,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
@@ -22,6 +23,9 @@ public class DifficulteyeBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_TerracottaLimeTree = createkey("add_terracottalimetree");
     public static final ResourceKey<BiomeModifier> ADD_TerracottaGreenTree = createkey("terracottagreentree");
     public static final ResourceKey<BiomeModifier> ADD_PinkFlower =createkey("add_pink_flower");
+    public static final ResourceKey<BiomeModifier> ADD_LiteBlueFlower=createkey("add_liteblure_flower");
+    public static final ResourceKey<BiomeModifier> ADD_MagentaFlower =createkey("add_magenta_flower");
+    public static final ResourceKey<BiomeModifier> ADDPurpleFlower =createkey("add_purple_flower");
 
     private static ResourceKey<BiomeModifier> createkey(String name){
         return ResourceKey.create(ForgeRegistries.Keys.BIOME_MODIFIERS,
@@ -44,6 +48,18 @@ public class DifficulteyeBiomeModifier {
         ));
         context.register(ADD_PinkFlower,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS), HolderSet.direct(placedFeature.getOrThrow(DifficulteyePlacement.PinkFlower)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+        context.register(ADD_LiteBlueFlower,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS), HolderSet.direct(placedFeature.getOrThrow(DifficulteyePlacement.LiteBlueFlower)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+        context.register(ADD_MagentaFlower,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS), HolderSet.direct(placedFeature.getOrThrow(DifficulteyePlacement.MagentaFlower)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+        context.register(ADDPurpleFlower,new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS), HolderSet.direct(placedFeature.getOrThrow(DifficulteyePlacement.PurpleFlower)),
                 GenerationStep.Decoration.VEGETAL_DECORATION
         ));
 

@@ -1,6 +1,8 @@
 package com.sheep.difficulteye.main;
 
 import com.mojang.logging.LogUtils;
+import com.sheep.difficulteye.enchantment.ModEnchantment;
+import com.sheep.difficulteye.entity.DifficulteyeEntities;
 import com.sheep.difficulteye.registries.BlockRegistry;
 import com.sheep.difficulteye.registries.CreativeTabRegistry;
 import com.sheep.difficulteye.registries.EntityRegistry;
@@ -57,6 +59,8 @@ public class Difficulteye {
          MinecraftForge.EVENT_BUS.register(this);
          ModTrunkPlacerTypes.register(modEventBus);
          ModFoliagePlacers.register(modEventBus);
+         DifficulteyeEntities.register(modEventBus);
+         ModEnchantment.register(modEventBus);
      }
 
 

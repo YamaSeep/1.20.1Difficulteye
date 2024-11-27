@@ -1,6 +1,8 @@
 package com.sheep.difficulteye.registries;
 
 import com.sheep.difficulteye.main.Difficulteye;
+import com.sheep.difficulteye.wands.*;
+import com.sheep.info.iteminfo.WitherTotem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -51,11 +53,22 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> TOTEM_OF_WARDEN = ITEMS.register("totem_of_warden",()->new Item(new Item.Properties().defaultDurability(2).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN = itemRegistryObject("totem_of_elder_gardian",8,Rarity.UNCOMMON);
-    public static final RegistryObject<Item> TOTEM_OF_WITHER = ITEMS.register("totem_of_wither",()->new Item(new Item.Properties().defaultDurability(5).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> TOTEM_OF_WITHER = ITEMS.register("totem_of_wither",()->new WitherTotem(new Item.Properties().defaultDurability(5).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> TOTEM_OF_PIGLINBRUTE = itemRegistryObject("totem_of_piglinbrute",8,Rarity.UNCOMMON);
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN_RIGHT = itemRegistryObject("totem_of_elder_gardian_right",16,Rarity.UNCOMMON);
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN_CENTER = itemRegistryObject("totem_of_elder_gardian_center",16,Rarity.UNCOMMON);
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN_LEFT = itemRegistryObject("totem_of_elder_gardian_left",16,Rarity.UNCOMMON);
+
+    public static final RegistryObject<Item> WAND_OF_ORE = ITEMS.register("wand_of_ore", ()->new WandOre(150,20*10));
+    public static final RegistryObject<Item> WAND_OF_BINDING = ITEMS.register("wand_of_binding", WandBinding::new);
+    public static final RegistryObject<Item> WAND_OF_PILLAGING = ITEMS.register("wand_of_pillaging", WandPillaging::new);
+    public static final RegistryObject<Item> WAND_OF_SUMMONING = ITEMS.register("wand_of_summoning", WandSummoning::new);
+    public static final RegistryObject<Item> WAND_OF_FIREBALLS = ITEMS.register("wand_of_fireballs", WandFireballs::new);
+    public static final RegistryObject<Item> WAND_OF_FROSTBITE = ITEMS.register("wand_of_frostbite", WandFrostbite::new);
+    public static final RegistryObject<Item> WAND_OF_SANDSTORMS = ITEMS.register("wand_of_sandstorms", WandSandstorms::new);
+    public static final RegistryObject<Item> WAND_OF_AQUATIC = ITEMS.register("wand_of_aquatic", WandAquatic::new);
+
+
 
     public static final RegistryObject<Item>[] Eyes = new RegistryObject[]{
             EYE_OF_ARTIFACT,
@@ -79,7 +92,9 @@ public class ItemRegistry {
 
             TOTEM_OF_WARDEN,TOTEM_OF_ELDER_GARDIAN,TOTEM_OF_WITHER,TOTEM_OF_PIGLINBRUTE,
 
-            TOTEM_OF_ELDER_GARDIAN_RIGHT,TOTEM_OF_ELDER_GARDIAN_LEFT,TOTEM_OF_ELDER_GARDIAN_CENTER
+            TOTEM_OF_ELDER_GARDIAN_RIGHT,TOTEM_OF_ELDER_GARDIAN_LEFT,TOTEM_OF_ELDER_GARDIAN_CENTER,
+
+            WAND_OF_ORE, WAND_OF_BINDING, WAND_OF_PILLAGING, WAND_OF_SUMMONING, WAND_OF_FIREBALLS, WAND_OF_FROSTBITE, WAND_OF_SANDSTORMS, WAND_OF_AQUATIC
     };
 
     private static RegistryObject<Item> itemRegistryObject(String name, int stack){

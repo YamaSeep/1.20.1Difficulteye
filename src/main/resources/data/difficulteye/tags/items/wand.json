@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "difficulteye:wand_of_ore",
+    "difficulteye:wand_of_binding",
+    "difficulteye:wand_of_pillaging",
+    "difficulteye:wand_of_summoning",
+    "difficulteye:wand_of_fireballs",
+    "difficulteye:wand_of_frostbite",
+    "difficulteye:wand_of_sandstorms",
+    "difficulteye:wand_of_aquatic"
+  ]
+}

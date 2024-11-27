@@ -1,9 +1,9 @@
 package com.sheep.difficulteye.eventt;
 
-import com.sheep.difficulteye.blockInfo.*;
 import com.sheep.difficulteye.registries.BlockRegistry;
 import com.sheep.difficulteye.registries.ItemRegistry;
 import com.sheep.difficulteye.registries.TagRegistry;
+import com.sheep.info.blockInfo.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;

@@ -12,6 +12,7 @@ public class TagRegistry {
     public static class Blocks{
         public static final TagKey<Block> PORTAL_FRAMES=blocktag("portal_frames");
         public static final TagKey<Block> UNBREAKS=blocktag("unbreak");
+        public static final TagKey<Block> ORES=blocktag("ores");
 
         private static TagKey<Block> blocktag (String name){
 
@@ -20,6 +21,7 @@ public class TagRegistry {
     }
     public static class Items{
         public static final TagKey<Item> TOTEM=itemtag("totem");
+        public static final TagKey<Item> WAND=itemtag("wand");
         private static TagKey<Item> itemtag (String name){
 
             return ItemTags.create(new ResourceLocation(Difficulteye.MODID,name));

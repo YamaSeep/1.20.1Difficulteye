@@ -1,4 +1,4 @@
-package com.sheep.difficulteye.blockInfo;
+package com.sheep.info.blockInfo;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -7,9 +7,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
-public class Endframe_Element extends Endframe{
-    public static final BooleanProperty EYE=BooleanProperty.create("endframe_element");
-    public Endframe_Element(){
+public class Endframe_Season extends Endframe{
+    public static final BooleanProperty EYE=BooleanProperty.create("endframe_season");
+    public Endframe_Season(){
         super();
         this.registerDefaultState(this.defaultBlockState().setValue(EYE,false));
         this.registerDefaultState(this.defaultBlockState().setValue(FACING, Direction.NORTH));

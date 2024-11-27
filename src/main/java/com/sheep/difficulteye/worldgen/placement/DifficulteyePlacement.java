@@ -8,6 +8,7 @@ import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -22,6 +23,9 @@ public class DifficulteyePlacement {
     public static final ResourceKey<PlacedFeature> TerracottaLimeTree =createKey("terracottalimetree");
     public static final ResourceKey<PlacedFeature> TerracottaGreenTree =createKey("terracottagreentree");
     public static final ResourceKey<PlacedFeature> PinkFlower =createKey("pink_flower");
+    public static final ResourceKey<PlacedFeature> LiteBlueFlower=createKey("liteblure_flower");
+    public static final ResourceKey<PlacedFeature> MagentaFlower =createKey("magenta_flower");
+    public static final ResourceKey<PlacedFeature> PurpleFlower =createKey("purple_flower");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         // 鉱石の配置情報を設定
@@ -32,16 +36,34 @@ public class DifficulteyePlacement {
                 commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-20))));
         PlacementUtils.register(context, TerracottaLimeTree,
                 configuredFeatures.getOrThrow(DifficulteyeFeature.TerracottaLimeTree_KEY),
-                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(10),
+                SurfaceWaterDepthFilter.forMaxDepth(0),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(20),
                 PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.TerracottaTreeLimeSapling.get().defaultBlockState(), BlockPos.ZERO)));
         PlacementUtils.register(context, TerracottaGreenTree,
                 configuredFeatures.getOrThrow(DifficulteyeFeature.TerracottaGreenTree_KEY),
-                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(10),
+                SurfaceWaterDepthFilter.forMaxDepth(0),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(20),
                 PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.TerracottaTreeGreenSapling.get().defaultBlockState(), BlockPos.ZERO)));
         PlacementUtils.register(context, PinkFlower,
                 configuredFeatures.getOrThrow(DifficulteyeFeature.PinkFlower_KEY),
-                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),
-                PlacementUtils.countExtra(10,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.PinkFlowerSapling.get().defaultBlockState(), BlockPos.ZERO)));
+                SurfaceWaterDepthFilter.forMaxDepth(0),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(45),
+                PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.PinkFlowerSapling.get().defaultBlockState(), BlockPos.ZERO)));
+        PlacementUtils.register(context, LiteBlueFlower,
+                configuredFeatures.getOrThrow(DifficulteyeFeature.LiteBlueFlower_KEY),
+                SurfaceWaterDepthFilter.forMaxDepth(0),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(45),
+                PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.LiteBlueFlowerSapling.get().defaultBlockState(), BlockPos.ZERO)));
+        PlacementUtils.register(context, MagentaFlower,
+                configuredFeatures.getOrThrow(DifficulteyeFeature.MagentaFlower_KEY),
+                SurfaceWaterDepthFilter.forMaxDepth(0),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(45),
+                PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.MagentaFlowerSapling.get().defaultBlockState(), BlockPos.ZERO)));
+        PlacementUtils.register(context, PurpleFlower,
+                configuredFeatures.getOrThrow(DifficulteyeFeature.PurpleFlower_KEY),
+                SurfaceWaterDepthFilter.forMaxDepth(0),
+                BiomeFilter.biome(),PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,InSquarePlacement.spread(),RarityFilter.onAverageOnceEvery(45),
+                PlacementUtils.countExtra(1,0.1f,0),BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(BlockRegistry.PurpleFlowerSapling.get().defaultBlockState(), BlockPos.ZERO)));
 
     }
 

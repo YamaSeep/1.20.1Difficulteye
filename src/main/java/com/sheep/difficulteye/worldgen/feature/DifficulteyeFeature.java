@@ -28,6 +28,9 @@ public class DifficulteyeFeature {
     public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaLimeTree_KEY =createKey("terracottalimetree");
     public static final ResourceKey<ConfiguredFeature<?,?>> TerracottaGreenTree_KEY =createKey("terracottagreentree");
     public static final ResourceKey<ConfiguredFeature<?,?>> PinkFlower_KEY =createKey("pink_flower");
+    public static final ResourceKey<ConfiguredFeature<?,?>> LiteBlueFlower_KEY =createKey("liteblure_flower");
+    public static final ResourceKey<ConfiguredFeature<?,?>> MagentaFlower_KEY =createKey("magenta_flower");
+    public static final ResourceKey<ConfiguredFeature<?,?>> PurpleFlower_KEY =createKey("purple_flower");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context){
         RuleTest stone=new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -56,11 +59,31 @@ public class DifficulteyeFeature {
         FeatureUtils.register(context, PinkFlower_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.LIME_TERRACOTTA.defaultBlockState()),
                 new FlowerTrunkPlacer(6,1,1),
+                BlockStateProvider.simple(Blocks.PINK_TERRACOTTA.defaultBlockState()),
+                new FlowerFoliagePlacer(ConstantInt.of(1),ConstantInt.of(0),1),
+                new TwoLayersFeatureSize(1,3,3)).build()
+        );
+        FeatureUtils.register(context, LiteBlueFlower_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.LIME_TERRACOTTA.defaultBlockState()),
+                new FlowerTrunkPlacer(6,1,1),
                 BlockStateProvider.simple(Blocks.LIGHT_BLUE_TERRACOTTA.defaultBlockState()),
                 new FlowerFoliagePlacer(ConstantInt.of(1),ConstantInt.of(0),1),
-                new TwoLayersFeatureSize(1,0,1)).build()
+                new TwoLayersFeatureSize(1,3,3)).build()
         );
-
+        FeatureUtils.register(context, MagentaFlower_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.LIME_TERRACOTTA.defaultBlockState()),
+                new FlowerTrunkPlacer(6,1,1),
+                BlockStateProvider.simple(Blocks.MAGENTA_TERRACOTTA.defaultBlockState()),
+                new FlowerFoliagePlacer(ConstantInt.of(1),ConstantInt.of(0),1),
+                new TwoLayersFeatureSize(1,3,3)).build()
+        );
+        FeatureUtils.register(context, PurpleFlower_KEY, Feature.TREE,new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.LIME_TERRACOTTA.defaultBlockState()),
+                new FlowerTrunkPlacer(6,1,1),
+                BlockStateProvider.simple(Blocks.PURPLE_TERRACOTTA.defaultBlockState()),
+                new FlowerFoliagePlacer(ConstantInt.of(1),ConstantInt.of(0),1),
+                new TwoLayersFeatureSize(1,3,3)).build()
+        );
     }
 
     public static ResourceKey<ConfiguredFeature<?,?>> createKey(String name){

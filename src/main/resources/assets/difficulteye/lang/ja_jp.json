@@ -80,6 +80,15 @@
     "item.difficulteye.totem_of_elder_gardian_center.description":"海底神殿の３体のエルダーガーディアンの１体からドロップ。",
     "item.difficulteye.totem_of_elder_gardian_left.description":"海底神殿の３体のエルダーガーディアンの１体からドロップ。",
 
+    "item.difficulteye.wand_of_ore": "鉱石の杖",
+    "item.difficulteye.wand_of_binding": "束縛の杖",
+    "item.difficulteye.wand_of_pillaging": "略奪の杖",
+    "item.difficulteye.wand_of_summoning": "召喚の杖",
+    "item.difficulteye.wand_of_fireballs": "火球の杖",
+    "item.difficulteye.wand_of_frostbite": "凍傷の杖",
+    "item.difficulteye.wand_of_sandstorms": "砂嵐の杖",
+    "item.difficulteye.wand_of_aquatic_life": "魚類の杖",
+
     "block.minecraft.red_terracotta.description": "砂漠のピラミッド、荒野バイオーム、、サバンナの村、旅路の遺跡に生成。",
     "block.minecraft.orange_terracotta.description": "荒野バイオーム、サバンナの村、旅路の遺跡に生成。",
     "block.minecraft.yellow_terracotta.description": "荒野バイオーム、サバンナの村、旅路の遺跡に生成。",
@@ -89,17 +98,18 @@
     "block.minecraft.terracotta.description": "荒野バイオーム、平原の村、砂漠の村、旅路の遺跡に生成。",
     "block.minecraft.blue_terracotta.description": "砂漠のピラミッド、旅路の遺跡に生成。",
     "block.minecraft.cyan_terracotta.description": "旅路の遺跡に生成。",
-    "block.minecraft.gray_terracotta.description": "y0～y-64に鉱石のように生成。",
+    "block.minecraft.gray_terracotta.description": "y-20～y-64に鉱石のように生成。",
     "block.minecraft.black_terracotta.description": "稀に森林バイオームにテラコッタの幹として生成。",
     "block.minecraft.lime_terracotta.description": "稀に森林バイオームにテラコッタの木の葉として生成。",
     "block.minecraft.green_terracotta.description": "稀に森林バイオームにテラコッタの木の葉として生成。",
-
-    "block.minecraft.light_blue_terracotta.description": "",
-    "block.minecraft.pink_terracotta.description": "",
-    "block.minecraft.purple_terracotta.description": "",
-    "block.minecraft.magenta_terracotta.description": "",
+    "block.minecraft.light_blue_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
+    "block.minecraft.pink_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
+    "block.minecraft.magenta_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
+    "block.minecraft.purple_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
 
     "message.difficulteye.cannot_place": "ここには松明しか置けません！",
     "message.difficulteye.wrong_hold_eye": "%sをいれてください！",
-    "message.difficulteye.hold_eye": "%sをいれました！"
+    "message.difficulteye.hold_eye": "%sをいれました！",
+
+    "enchantment.difficulteye.range_boost": "範囲増加"
 }
