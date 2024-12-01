@@ -67,7 +67,7 @@
     "item.difficulteye.totem_of_warden": "ウォーデンのトーテム",
     "item.difficulteye.totem_of_warden.description": "クリーチャーアイの材料でウォーデンから100％ドロップします。２回使え、死亡した場合不死のトーテムの効果と俊敏Ⅳが付与される。",
     "item.difficulteye.totem_of_elder_gardian": "エルダーガーディアンのトーテム",
-    "item.difficulteye.totem_of_elder_gardian.description": "クリーチャーアイの材料。死亡した場合、不死のトーテムの効果とイルカの加護Ⅵが付与される。",
+    "item.difficulteye.totem_of_elder_gardian.description": "クリーチャーアイの材料。死亡した場合、不死のトーテムの効果とイルカの好意が付与される。",
     "item.difficulteye.totem_of_wither": "ウィザーのトーテム",
     "item.difficulteye.totem_of_wither.description": "クリーチャーアイの材料。５回使え、死亡した場合強化された不死のトーテムの効果を得る",
     "item.difficulteye.totem_of_piglinbrute": "ピグリンブルートのトーテム",
@@ -81,13 +81,20 @@
     "item.difficulteye.totem_of_elder_gardian_left.description":"海底神殿の３体のエルダーガーディアンの１体からドロップ。",
 
     "item.difficulteye.wand_of_ore": "鉱石の杖",
+    "item.difficulteye.wand_of_ore.description":"廃坑の宝箱で稀に入手可能。使用で半径5マスの鉱石をハイライトし、効果増強エンチャントで範囲拡大、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
     "item.difficulteye.wand_of_binding": "束縛の杖",
     "item.difficulteye.wand_of_pillaging": "略奪の杖",
     "item.difficulteye.wand_of_summoning": "召喚の杖",
     "item.difficulteye.wand_of_fireballs": "火球の杖",
     "item.difficulteye.wand_of_frostbite": "凍傷の杖",
     "item.difficulteye.wand_of_sandstorms": "砂嵐の杖",
-    "item.difficulteye.wand_of_aquatic_life": "魚類の杖",
+    "item.difficulteye.wand_of_aquatic": "海豚の杖",
+    "item.difficulteye.wand_of_aquatic.description":"沈没船の宝箱で稀に入手可能。使用で水中歩行と暗視が付き、効果増強エンチャントで効果レベルアップ、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
+
+    "tooltip.difficulteye.wand_of_ore": "半径%sマスにある鉱石をハイライトする。",
+    "tooltip.difficulteye.wand_of_aquatic": "水中歩行%sと水中呼吸を得る",
+    "tooltip.difficulteye.wand_of_pillaging":"半径%sマスに存在する敵から%sで手持ち装備を奪う",
+    "tooltip.difficulteye.cooltime": "クールタイム:%s秒",
 
     "block.minecraft.red_terracotta.description": "砂漠のピラミッド、荒野バイオーム、、サバンナの村、旅路の遺跡に生成。",
     "block.minecraft.orange_terracotta.description": "荒野バイオーム、サバンナの村、旅路の遺跡に生成。",
@@ -110,6 +117,13 @@
     "message.difficulteye.cannot_place": "ここには松明しか置けません！",
     "message.difficulteye.wrong_hold_eye": "%sをいれてください！",
     "message.difficulteye.hold_eye": "%sをいれました！",
+    "message.difficulteye.wandore": "鉱石が見つかりませんでした。",
+    "message.difficulteye.pollagerwand": "奪える対象がいません",
+    "message.difficulteye.inventoryfull": "インベントリが満杯です！。",
+    "message.difficulteye.pillagefail":"奪えませんでした。",
 
-    "enchantment.difficulteye.range_boost": "範囲増加"
+    "enchantment.difficulteye.effect_boost": "効果増強",
+    "enchantment.difficulteye.quick_use": "高速使用",
+
+    "effect.difficulteye.depth_strider": "水中歩行"
 }

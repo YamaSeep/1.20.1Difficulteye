@@ -67,7 +67,7 @@
   "item.difficulteye.totem_of_warden": "totem of warden",
   "item.difficulteye.totem_of_warden.description": "The material for the Eye of Creature drops 100% from the Warden.Can be used twice. If you die, it grants the effect of the Totem of Undying and Speed IV.",
   "item.difficulteye.totem_of_elder_gardian": "totem of elder gardian",
-  "item.difficulteye.totem_of_elder_gardian.description": "Material for Eye of Creature. If you die, it grants the effect of a Totem of Undying and Dolphin's Grace VI.",
+  "item.difficulteye.totem_of_elder_gardian.description": "Material for Eye of Creature. If you die, it grants the effect of a Totem of Undying and Dolphin's Grace.",
   "item.difficulteye.totem_of_wither": "totem of wither",
   "item.difficulteye.totem_of_wither.description": "The material for the Eye of Creatur. Can be used 5 times. Upon death, If you die, it grants the effect of an Enhanced Totem of Undying.",
   "item.difficulteye.totem_of_piglinbrute": "totem of piglinbrute",
@@ -81,13 +81,20 @@
   "item.difficulteye.totem_of_elder_gardian_left.description": "Dropped by one of the three Elder Guardians in the Ocean Monument.",
 
   "item.difficulteye.wand_of_ore": "Ore Wand",
+  "item.difficulteye.wand_of_ore.description":"Rarely found in mineshaft chests. Using it highlights ores within a 5-block radius, with range increase by the Range Boost Enchant and cooldown reduce by the Quick Use Enchant. Cannot be enchanted with Mending, but can be repaired with diamonds.",
   "item.difficulteye.wand_of_binding": "Binding Wand",
   "item.difficulteye.wand_of_pillaging": "Pillaging Wand",
   "item.difficulteye.wand_of_summoning": "Summoning Wand",
   "item.difficulteye.wand_of_fireballs": "Fireballs Wand",
   "item.difficulteye.wand_of_frostbite": "Frostbite Wand",
   "item.difficulteye.wand_of_sandstorms": "Sandstorms Wand",
-  "item.difficulteye.wand_of_aquatic_life": "Aquatic Wand",
+  "item.difficulteye.wand_of_aquatic": "Aquatic Wand",
+  "item.difficulteye.wand_of_aquatic.description":"Rarely found in shipwreck chests. Using it grants Depth Strider and Water Breathing effects, with effect levels increased by the Effect Boost enchantment and cooldown reduced by the Quick Use enchantment. Cannot be enchanted with Mending, but can be repaired with diamonds.",
+
+  "tooltip.difficulteye.wand_of_ore": "Highlight ores within a radius of %s blocks",
+  "tooltip.difficulteye.wand_of_aquatic": "Grants Depth Strider %s and Water Breathing.",
+  "tooltip.difficulteye.wand_of_pillaging":"Pillages equipment from enemies within a radius of %s blocks with a %s chance..",
+  "tooltip.difficulteye.cooltime": "Cooldown: %s seconds",
 
 
   "block.minecraft.red_terracotta.description": "Generated in desert pyramids, badlands, savanna villages, and trail ruins.",
@@ -111,6 +118,13 @@
   "message.difficulteye.cannot_place": "Only torches can be placed here!",
   "message.difficulteye.wrong_hold_eye": "Please hold %s!",
   "message.difficulteye.hold_eye": "you hold %s!",
+  "message.difficulteye.wandore": "No ores found.",
+  "message.difficulteye.pollagerwand": "No one to pillage exists.",
+  "message.difficulteye.inventoryfull": "Inventory is full!",
+  "message.difficulteye.pillagefail":"Faild to pillage.",
 
-  "enchantment.difficulteye.range_boost": "Range boost"
+  "enchantment.difficulteye.effect_boost": "Effect boost",
+  "enchantment.difficulteye.quick_use": "Quick use",
+
+  "effect.difficulteye.depth_strider": "Depth Strider"
 }

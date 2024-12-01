@@ -1,10 +1,10 @@
-package com.sheep.info.iteminfo;
+package com.sheep.difficulteye.info.iteminfo;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class WitherTotem extends Item {
-    public WitherTotem(Properties p_41383_) {
+public class WardenTotem extends Item {
+    public WardenTotem(Properties p_41383_) {
         super(p_41383_);
     }
 

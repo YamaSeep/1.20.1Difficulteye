@@ -1,4 +1,4 @@
-package com.sheep.info.blockInfo;
+package com.sheep.difficulteye.info.blockInfo;
 
 
 import net.minecraft.core.BlockPos;

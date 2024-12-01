@@ -43,19 +43,11 @@ public abstract class UnbreakSructureMixin {
             CallbackInfo ci) {
 
         List<StructurePiece> pieces = piecesContainer.pieces();
-        Class<?> targetClass = NetherFortressPieces.class;
-        Class<?>[] nestedClasses = targetClass.getDeclaredClasses();
 
         for (StructurePiece piece : pieces) {
             if (piece instanceof OceanMonumentPieces.MonumentBuilding) { // OceanMonumentPiece に置き換え
                 replaceblock("overworld",piece.getBoundingBox(),worldGenLevel,new Block[]{Blocks.PRISMARINE,Blocks.PRISMARINE_BRICKS,Blocks.DARK_PRISMARINE,Blocks.SEA_LANTERN},
                         BlockRegistry.Monument);
-            }
-            for (Class<?> nestedClass : nestedClasses) {
-                if (nestedClass.isAssignableFrom(piece.getClass())) {
-                    worldGenLevel.getLevel().getServer().execute(()->
-                            replaceblock("",piece.getBoundingBox(),worldGenLevel,new Block[]{Blocks.NETHER_BRICKS},new RegistryObject[]{BlockRegistry.UnbreakNetherbrick}));
-                }
             }
         }
 

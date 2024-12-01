@@ -1,10 +1,10 @@
 package com.sheep.difficulteye.registries;
 
+import com.sheep.difficulteye.info.blockInfo.*;
 import com.sheep.difficulteye.main.Difficulteye;
 import com.sheep.difficulteye.worldgen.tree.PinkFlower;
 import com.sheep.difficulteye.worldgen.tree.TerracottaTreeGreen;
 import com.sheep.difficulteye.worldgen.tree.TerracottaTreeLime;
-import com.sheep.info.blockInfo.*;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;

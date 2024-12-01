@@ -45,7 +45,7 @@ public abstract class LivingEntityMixin extends Entity {
 
     @Inject(at = @At("HEAD"), method = "checkTotemDeathProtection", cancellable = true)
     public void useWardeTotem(DamageSource damageSource_1, CallbackInfoReturnable<Boolean> callback) {
-        /*inits PlayerEntity entity, which is HylightBlock copy of this casted to Living Entity and then PlayerEntity*/
+        /*inits PlayerEntity entity, which is SummonersZombie copy of this casted to Living Entity and then PlayerEntity*/
         Entity entity = this;
         /*ItemStack object that is set to the offhand item that entity is carrying*/
         ItemStack offhand_stack = ((LivingEntityMixin) entity).getItemInHand(InteractionHand.OFF_HAND);
@@ -55,7 +55,7 @@ public abstract class LivingEntityMixin extends Entity {
         //Executes if the item in offhand_stack is equal to the explosive totem of Undying
         if ((offhand_stack.getItem() == ItemRegistry.TOTEM_OF_WARDEN.get()) || (mainhand_stack.getItem() == ItemRegistry.TOTEM_OF_WARDEN.get())) {
 
-            /*If the damagesource is something that could kill HylightBlock player in creative mode, the totem does not work*/
+            /*If the damagesource is something that could kill SummonersZombie player in creative mode, the totem does not work*/
             if (damageSource_1.type().equals(DamageTypes.FELL_OUT_OF_WORLD)) {
 
                 callback.setReturnValue(false);
@@ -81,7 +81,7 @@ public abstract class LivingEntityMixin extends Entity {
 
     @Inject(at = @At("HEAD"), method = "checkTotemDeathProtection", cancellable = true)
     public void useElderTotem(DamageSource damageSource_1, CallbackInfoReturnable<Boolean> callback) {
-        /*inits PlayerEntity entity, which is HylightBlock copy of this casted to Living Entity and then PlayerEntity*/
+        /*inits PlayerEntity entity, which is SummonersZombie copy of this casted to Living Entity and then PlayerEntity*/
         Entity entity = this;
         /*ItemStack object that is set to the offhand item that entity is carrying*/
         ItemStack offhand_stack = ((LivingEntityMixin) entity).getItemInHand(InteractionHand.OFF_HAND);
@@ -91,7 +91,7 @@ public abstract class LivingEntityMixin extends Entity {
         //Executes if the item in offhand_stack is equal to the explosive totem of Undying
         if ((offhand_stack.getItem() == ItemRegistry.TOTEM_OF_ELDER_GARDIAN.get()) || (mainhand_stack.getItem() == ItemRegistry.TOTEM_OF_ELDER_GARDIAN.get())) {
 
-            /*If the damagesource is something that could kill HylightBlock player in creative mode, the totem does not work*/
+            /*If the damagesource is something that could kill SummonersZombie player in creative mode, the totem does not work*/
             if (damageSource_1.type().equals(DamageTypes.FELL_OUT_OF_WORLD)) {
 
                 callback.setReturnValue(false);
@@ -115,7 +115,7 @@ public abstract class LivingEntityMixin extends Entity {
 
     @Inject(at = @At("HEAD"), method = "checkTotemDeathProtection", cancellable = true)
     public void useWitherTotem(DamageSource damageSource_1, CallbackInfoReturnable<Boolean> callback) {
-        /*inits PlayerEntity entity, which is HylightBlock copy of this casted to Living Entity and then PlayerEntity*/
+        /*inits PlayerEntity entity, which is SummonersZombie copy of this casted to Living Entity and then PlayerEntity*/
         Entity entity = this;
         /*ItemStack object that is set to the offhand item that entity is carrying*/
         ItemStack offhand_stack = ((LivingEntityMixin) entity).getItemInHand(InteractionHand.OFF_HAND);
@@ -125,7 +125,7 @@ public abstract class LivingEntityMixin extends Entity {
         //Executes if the item in offhand_stack is equal to the explosive totem of Undying
         if ((offhand_stack.getItem() == ItemRegistry.TOTEM_OF_WITHER.get()) || (mainhand_stack.getItem() == ItemRegistry.TOTEM_OF_WITHER.get())) {
 
-            /*If the damagesource is something that could kill HylightBlock player in creative mode, the totem does not work*/
+            /*If the damagesource is something that could kill SummonersZombie player in creative mode, the totem does not work*/
             if (damageSource_1.type().equals(DamageTypes.FELL_OUT_OF_WORLD)) {
 
                 callback.setReturnValue(false);
@@ -150,7 +150,7 @@ public abstract class LivingEntityMixin extends Entity {
 
     @Inject(at = @At("HEAD"), method = "checkTotemDeathProtection", cancellable = true)
     public void usePiglinbruteTotem(DamageSource damageSource_1, CallbackInfoReturnable<Boolean> callback) {
-        /*inits PlayerEntity entity, which is HylightBlock copy of this casted to Living Entity and then PlayerEntity*/
+        /*inits PlayerEntity entity, which is SummonersZombie copy of this casted to Living Entity and then PlayerEntity*/
         Entity entity = this;
         /*ItemStack object that is set to the offhand item that entity is carrying*/
         ItemStack offhand_stack = ((LivingEntityMixin) entity).getItemInHand(InteractionHand.OFF_HAND);
@@ -160,7 +160,7 @@ public abstract class LivingEntityMixin extends Entity {
         //Executes if the item in offhand_stack is equal to the explosive totem of Undying
         if ((offhand_stack.getItem() == ItemRegistry.TOTEM_OF_PIGLINBRUTE.get()) || (mainhand_stack.getItem() == ItemRegistry.TOTEM_OF_PIGLINBRUTE.get())) {
 
-            /*If the damagesource is something that could kill HylightBlock player in creative mode, the totem does not work*/
+            /*If the damagesource is something that could kill SummonersZombie player in creative mode, the totem does not work*/
             if (damageSource_1.type().equals(DamageTypes.FELL_OUT_OF_WORLD)) {
 
                 callback.setReturnValue(false);

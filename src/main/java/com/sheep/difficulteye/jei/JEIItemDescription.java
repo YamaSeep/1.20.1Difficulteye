@@ -55,6 +55,7 @@ public class JEIItemDescription implements IModPlugin {
         addItemInfo(registration,TOTEM_OF_ELDER_GARDIAN_LEFT.get());
         addItemInfo(registration,TOTEM_OF_WITHER.get());
         addItemInfo(registration,TOTEM_OF_PIGLINBRUTE.get());
+        addItemInfo(registration,WAND_OF_ORE.get());
 
         addItemInfo(registration,TERRACOTTA);
         addItemInfo(registration, RED_TERRACOTTA);
