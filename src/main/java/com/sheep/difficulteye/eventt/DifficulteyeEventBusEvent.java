@@ -12,6 +12,6 @@ public class DifficulteyeEventBusEvent {
 
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event){
-        event.put(DifficulteyeEntities.HYLIGHTBLOCK.get(), SummonersZombie.createAttributes().build());
+        event.put(DifficulteyeEntities.SUMMONERS_ZOMBIE.get(), SummonersZombie.createAttributes().build());
     }
 }

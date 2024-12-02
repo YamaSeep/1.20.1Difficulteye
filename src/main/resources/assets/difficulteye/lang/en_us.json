@@ -115,16 +115,18 @@
   "block.minecraft.purple_terracotta.description": "Rarely generates as terracotta flower in plains biome.",
   "block.minecraft.magenta_terracotta.description": "Rarely generates as terracotta flower in plains biome.",
 
+  "entity.difficulteye.summonerszombie": "summoner zombie",
+
+  "enchantment.difficulteye.effect_boost": "Effect boost",
+  "enchantment.difficulteye.quick_use": "Quick use",
+
+  "effect.difficulteye.depth_strider": "Depth Strider",
   "message.difficulteye.cannot_place": "Only torches can be placed here!",
   "message.difficulteye.wrong_hold_eye": "Please hold %s!",
   "message.difficulteye.hold_eye": "you hold %s!",
   "message.difficulteye.wandore": "No ores found.",
   "message.difficulteye.pollagerwand": "No one to pillage exists.",
   "message.difficulteye.inventoryfull": "Inventory is full!",
-  "message.difficulteye.pillagefail":"Faild to pillage.",
+  "message.difficulteye.pillagefail":"Faild to pillage."
 
-  "enchantment.difficulteye.effect_boost": "Effect boost",
-  "enchantment.difficulteye.quick_use": "Quick use",
-
-  "effect.difficulteye.depth_strider": "Depth Strider"
 }

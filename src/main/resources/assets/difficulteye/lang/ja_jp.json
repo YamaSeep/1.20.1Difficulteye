@@ -114,16 +114,18 @@
     "block.minecraft.magenta_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
     "block.minecraft.purple_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
 
+    "entity.difficulteye.summonerszombie": "召喚ゾンビ",
+
+    "enchantment.difficulteye.effect_boost": "効果増強",
+    "enchantment.difficulteye.quick_use": "高速使用",
+
+    "effect.difficulteye.depth_strider": "水中歩行",
     "message.difficulteye.cannot_place": "ここには松明しか置けません！",
     "message.difficulteye.wrong_hold_eye": "%sをいれてください！",
     "message.difficulteye.hold_eye": "%sをいれました！",
     "message.difficulteye.wandore": "鉱石が見つかりませんでした。",
     "message.difficulteye.pollagerwand": "奪える対象がいません",
     "message.difficulteye.inventoryfull": "インベントリが満杯です！。",
-    "message.difficulteye.pillagefail":"奪えませんでした。",
+    "message.difficulteye.pillagefail":"奪えませんでした。"
 
-    "enchantment.difficulteye.effect_boost": "効果増強",
-    "enchantment.difficulteye.quick_use": "高速使用",
-
-    "effect.difficulteye.depth_strider": "水中歩行"
 }
