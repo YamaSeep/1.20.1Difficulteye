@@ -61,12 +61,12 @@ public class ItemRegistry {
     public static final RegistryObject<Item> TOTEM_OF_ELDER_GARDIAN_LEFT = itemRegistryObject("totem_of_elder_gardian_left",16,Rarity.UNCOMMON);
 
     public static final RegistryObject<Item> WAND_OF_ORE = ITEMS.register("wand_of_ore", ()->new WandOre(100,20*10));
-    public static final RegistryObject<Item> WAND_OF_BINDING = ITEMS.register("wand_of_binding", WandBinding::new);
-    public static final RegistryObject<Item> WAND_OF_PILLAGING = ITEMS.register("wand_of_pillaging", ()->new WandPillaging(20,20*5));
-    public static final RegistryObject<Item> WAND_OF_SUMMONING = ITEMS.register("wand_of_summoning", WandSummoning::new);
+    public static final RegistryObject<Item> WAND_OF_BINDING = ITEMS.register("wand_of_binding", ()->new WandBinding(140,20*1));
+    public static final RegistryObject<Item> WAND_OF_PILLAGING = ITEMS.register("wand_of_pillaging", ()->new WandPillaging(15,20*15));
+    public static final RegistryObject<Item> WAND_OF_SUMMONING = ITEMS.register("wand_of_summoning",()->new WandSummoning(50,20*14));
     public static final RegistryObject<Item> WAND_OF_FIREBALLS = ITEMS.register("wand_of_fireballs", WandFireballs::new);
     public static final RegistryObject<Item> WAND_OF_FROSTBITE = ITEMS.register("wand_of_frostbite", WandFrostbite::new);
-    public static final RegistryObject<Item> WAND_OF_SANDSTORMS = ITEMS.register("wand_of_sandstorms", WandSandstorms::new);
+    public static final RegistryObject<Item> WAND_OF_SANDSTORMS = ITEMS.register("wand_of_sandstorms",()->new WandSandstorms(100,20*15));
     public static final RegistryObject<Item> WAND_OF_AQUATIC = ITEMS.register("wand_of_aquatic", ()->new WandAquatic(200,20*12));
 
     public static final RegistryObject<Item>[] Eyes = new RegistryObject[]{

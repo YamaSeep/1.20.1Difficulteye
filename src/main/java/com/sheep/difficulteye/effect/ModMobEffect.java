@@ -13,6 +13,13 @@ public class ModMobEffect {
 
     public static final RegistryObject<MobEffect> DepthStriderEffect=MOB_EFFECT.register("depth_strider",
             ()->new DepthStriderEffect(MobEffectCategory.NEUTRAL,0x4f8a98));
+
+    public static final RegistryObject<MobEffect> BleedingDamageEffect=MOB_EFFECT.register("bleeding",
+            ()->new BleedingEffect(MobEffectCategory.NEUTRAL,0xff0000));
+
+    public static final RegistryObject<MobEffect> BrindingEffect=MOB_EFFECT.register("binding",
+            ()->new BindingEffect(MobEffectCategory.NEUTRAL,0x9aafa7));
+
     public static void register(IEventBus eventBus){
         MOB_EFFECT.register(eventBus);
     }

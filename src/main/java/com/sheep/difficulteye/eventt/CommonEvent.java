@@ -6,9 +6,6 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexFormat;
-import com.sheep.difficulteye.particle.ModParticle;
-import com.sheep.difficulteye.particle.RangeParticle;
-import com.sheep.difficulteye.particle.RangeParticleFactory;
 import com.sheep.difficulteye.registries.TagRegistry;
 import com.sheep.difficulteye.wands.WandOre;
 import net.minecraft.client.Camera;
@@ -20,15 +17,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.client.event.RenderLevelStageEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.level.ExplosionEvent;
 import net.minecraftforge.event.level.PistonEvent;
@@ -37,9 +33,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.lwjgl.opengl.GL11;
 
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class CommonEvent {
@@ -179,8 +173,6 @@ public class CommonEvent {
         if (event.getLevel().isClientSide() || !(event.getEntity() instanceof Player player)) return;
         if (event.getState().is(Blocks.TORCH) || event.getState().is(TagRegistry.Blocks.UNBREAKS)) return;
         BlockPos blockPos = event.getPos();
-        BlockState state = event.getState();
-        Level level = (Level) event.getLevel();
         for (int x = -4; x <= 4; x++) {
             for (int y = -4; y <= 4; y++) {
                 for (int z = -4; z <= 4; z++) {
@@ -194,7 +186,6 @@ public class CommonEvent {
             }
         }
         if (event.getLevel() instanceof ServerLevel serverLevel) {
-            // ネザーレンガの場合、設置情報を保存
             if (event.getPlacedBlock().getBlock() == Blocks.NETHER_BRICKS) {
                 PlacedBlockData data = PlacedBlockData.get(serverLevel);
                 data.addBlock(blockPos);

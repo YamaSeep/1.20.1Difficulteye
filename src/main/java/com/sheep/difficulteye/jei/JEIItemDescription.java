@@ -3,6 +3,7 @@ package com.sheep.difficulteye.jei;
 import com.sheep.difficulteye.main.Difficulteye;
 import static com.sheep.difficulteye.registries.ItemRegistry.*;
 
+import com.sheep.difficulteye.wands.WandSummoning;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.RecipeTypes;
@@ -56,6 +57,13 @@ public class JEIItemDescription implements IModPlugin {
         addItemInfo(registration,TOTEM_OF_WITHER.get());
         addItemInfo(registration,TOTEM_OF_PIGLINBRUTE.get());
         addItemInfo(registration,WAND_OF_ORE.get());
+        addItemInfo(registration,WAND_OF_AQUATIC.get());
+        addItemInfo(registration,WAND_OF_PILLAGING.get());
+        addItemInfo(registration,WAND_OF_SUMMONING.get());
+        addItemInfo(registration,WAND_OF_SANDSTORMS.get());
+        addItemInfo(registration,WAND_OF_FROSTBITE.get());
+        addItemInfo(registration,WAND_OF_FIREBALLS.get());
+        addItemInfo(registration,WAND_OF_BINDING.get());
 
         addItemInfo(registration,TERRACOTTA);
         addItemInfo(registration, RED_TERRACOTTA);

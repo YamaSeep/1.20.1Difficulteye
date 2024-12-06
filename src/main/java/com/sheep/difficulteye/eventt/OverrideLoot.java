@@ -33,19 +33,13 @@ public class OverrideLoot {
                 event.setCanceled(true);
             }
             if (entity instanceof ElderGuardian) {
-                if (entity.getCustomName() == null) return;
-                System.out.println(entity.getCustomName().getString() + " is dead");
-                switch (entity.getCustomName().getString()) {
-                    case "Elder_no.0":
-                        entity.spawnAtLocation(new ItemStack(ItemRegistry.TOTEM_OF_ELDER_GARDIAN_RIGHT.get(), 1));
-                        break;
-                    case "Elder_no.1":
-                        entity.spawnAtLocation(new ItemStack(ItemRegistry.TOTEM_OF_ELDER_GARDIAN_CENTER.get(), 1));
-                        break;
-                    case "Elder_no.2":
-                        entity.spawnAtLocation(new ItemStack(ItemRegistry.TOTEM_OF_ELDER_GARDIAN_LEFT.get(), 1));
-                        break;
-                }
+                if (entity.getTags().isEmpty()) return;
+                if (entity.getTags().contains("Elder_no.0"))
+                    entity.spawnAtLocation(new ItemStack(ItemRegistry.TOTEM_OF_ELDER_GARDIAN_RIGHT.get(), 1));
+                else if (entity.getTags().contains("Elder_no.1"))
+                    entity.spawnAtLocation(new ItemStack(ItemRegistry.TOTEM_OF_ELDER_GARDIAN_LEFT.get(), 1));
+                 else if (entity.getTags().contains("Elder_no.2"))
+                    entity.spawnAtLocation(new ItemStack(ItemRegistry.TOTEM_OF_ELDER_GARDIAN_CENTER.get(), 1));
             }
             if (entity instanceof PiglinBrute){
                 if (ThreadLocalRandom.current().nextBoolean()){
@@ -64,11 +58,10 @@ public class OverrideLoot {
             if (!datadirectory.exists()) if (datadirectory.mkdir()) System.out.println("created data.dat");
             int i = loadIntFromFile(new File(datadirectory, "data.dat"));
             if (!entity.hasCustomName()) {
-
                 if (((ElderGuardian) entity).getSpawnType() == MobSpawnType.SPAWN_EGG) return;
                 if (((ElderGuardian) entity).getSpawnType() == MobSpawnType.COMMAND) return;
                 if (i % 3 == 0) i = 0;
-                entity.setCustomName(Component.literal("Elder_no." + i));
+                entity.addTag("Elder_no." + i);
                 entity.setCustomNameVisible(false);
                 i++;
                 saveIntToFile(new File(datadirectory, "data.dat"), i);

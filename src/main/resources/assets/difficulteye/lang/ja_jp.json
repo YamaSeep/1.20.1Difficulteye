@@ -81,19 +81,26 @@
     "item.difficulteye.totem_of_elder_gardian_left.description":"海底神殿の３体のエルダーガーディアンの１体からドロップ。",
 
     "item.difficulteye.wand_of_ore": "鉱石の杖",
-    "item.difficulteye.wand_of_ore.description":"廃坑の宝箱で稀に入手可能。使用で半径5マスの鉱石をハイライトし、効果増強エンチャントで範囲拡大、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
+    "tooltip.difficulteye.wand_of_ore": "半径%sマスにある鉱石をハイライトする。",
+    "item.difficulteye.wand_of_ore.description":"稀に廃坑の宝箱で入手可能。使用で半径5マスの鉱石をハイライトする。効果増強エンチャントで範囲拡大、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
     "item.difficulteye.wand_of_binding": "束縛の杖",
+    "tooltip.difficulteye.wand_of_binding": "半径%sマスの敵を茨で拘束し出血させる",
+    "item.difficulteye.wand_of_binding.description":"ジャングル寺院の宝箱で入手可能。使用で半径3マスの敵を茨で拘束し出血させる。効果増強エンチャントで範囲拡大、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
     "item.difficulteye.wand_of_pillaging": "略奪の杖",
+    "tooltip.difficulteye.wand_of_pillaging":"半径%sマスに存在する敵から%sで装備を奪う",
+    "item.difficulteye.wand_of_pillaging.description":"稀に前哨基地の宝箱で入手可能。使用で半径3マスの敵の装備を奪う。効果増強エンチャントで範囲拡大、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
     "item.difficulteye.wand_of_summoning": "召喚の杖",
+    "tooltip.difficulteye.wand_of_summoning": "半径4マスに%s体のゾンビを召喚する",
+    "item.difficulteye.wand_of_summoning.description": "稀にスポナー部屋の宝箱で入手可能。使用で半径4マスに5体のゾンビを召喚する。効果増強エンチャントで召喚数増加、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
     "item.difficulteye.wand_of_fireballs": "火球の杖",
     "item.difficulteye.wand_of_frostbite": "凍傷の杖",
     "item.difficulteye.wand_of_sandstorms": "砂嵐の杖",
+    "tooltip.difficulteye.wand_of_sandstorms": "半径%sマスの砂嵐で敵を吹き飛ばす",
+    "item.difficulteye.wand_of_sandstorms.description":"稀に砂漠のピラミッドの宝箱で入手可能。使用で砂嵐を起こして吹っ飛ばし、出血ダメージを与える。効果増強エンチャントで範囲拡大、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
     "item.difficulteye.wand_of_aquatic": "海豚の杖",
-    "item.difficulteye.wand_of_aquatic.description":"沈没船の宝箱で稀に入手可能。使用で水中歩行と暗視が付き、効果増強エンチャントで効果レベルアップ、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
-
-    "tooltip.difficulteye.wand_of_ore": "半径%sマスにある鉱石をハイライトする。",
     "tooltip.difficulteye.wand_of_aquatic": "水中歩行%sと水中呼吸を得る",
-    "tooltip.difficulteye.wand_of_pillaging":"半径%sマスに存在する敵から%sで手持ち装備を奪う",
+    "item.difficulteye.wand_of_aquatic.description":"稀に沈没船の宝箱で入手可能。使用で水中歩行と暗視が付く。効果増強エンチャントで効果レベルアップ、高速使用エンチャントでクールタイム短縮。修繕エンチャントは付けられず、ダイヤモンドで修理。",
+
     "tooltip.difficulteye.cooltime": "クールタイム:%s秒",
 
     "block.minecraft.red_terracotta.description": "砂漠のピラミッド、荒野バイオーム、、サバンナの村、旅路の遺跡に生成。",
@@ -114,18 +121,22 @@
     "block.minecraft.magenta_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
     "block.minecraft.purple_terracotta.description": "稀に平原にテラコッタのチューリップとして生成。",
 
-    "entity.difficulteye.summonerszombie": "召喚ゾンビ",
+    "entity.difficulteye.summoners_zombie": "召喚ゾンビ",
 
     "enchantment.difficulteye.effect_boost": "効果増強",
     "enchantment.difficulteye.quick_use": "高速使用",
 
     "effect.difficulteye.depth_strider": "水中歩行",
+    "effect.difficulteye.bleeding": "出血",
+    "effect.difficulteye.binding": "拘束",
+
+    "message.difficulteye.inventoryfull": "インベントリが満杯です！",
+    "message.difficulteye.nospace": "十分なスペースがありません！",
     "message.difficulteye.cannot_place": "ここには松明しか置けません！",
     "message.difficulteye.wrong_hold_eye": "%sをいれてください！",
     "message.difficulteye.hold_eye": "%sをいれました！",
     "message.difficulteye.wandore": "鉱石が見つかりませんでした。",
     "message.difficulteye.pollagerwand": "奪える対象がいません",
-    "message.difficulteye.inventoryfull": "インベントリが満杯です！。",
     "message.difficulteye.pillagefail":"奪えませんでした。"
 
 }

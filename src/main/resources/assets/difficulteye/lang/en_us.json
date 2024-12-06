@@ -81,21 +81,27 @@
   "item.difficulteye.totem_of_elder_gardian_left.description": "Dropped by one of the three Elder Guardians in the Ocean Monument.",
 
   "item.difficulteye.wand_of_ore": "Ore Wand",
-  "item.difficulteye.wand_of_ore.description":"Rarely found in mineshaft chests. Using it highlights ores within a 5-block radius, with range increase by the Range Boost Enchant and cooldown reduce by the Quick Use Enchant. Cannot be enchanted with Mending, but can be repaired with diamonds.",
+  "item.difficulteye.wand_of_ore.description":"Rarely found in Mineshaft chests. Using it highlights ores within a 5-block radius. Its range increases with the Range Boost Enchant, and its cooldown decreases with the Quick Use Enchant. It cannot be enchanted with Mending, but it can be repaired with diamonds.",
+  "tooltip.difficulteye.wand_of_ore": "Highlight ores within a radius of %s blocks",
   "item.difficulteye.wand_of_binding": "Binding Wand",
+  "tooltip.difficulteye.wand_of_binding": "Bind enemies with thorns to cause bleeding within a radius of %s blocks.",
+  "item.difficulteye.wand_of_binding.description":"Found in Jungle Temple chests. Using it, bind enemies with thorns to cause bleeding within a 3-blocks radius. Its range increases with the Range Boost Enchant, and its cooldown decreases with the Quick Use Enchant. It cannot be enchanted with Mending, but it can be repaired with diamonds.",
   "item.difficulteye.wand_of_pillaging": "Pillaging Wand",
-  "item.difficulteye.wand_of_summoning": "Summoning Wand",
+  "tooltip.difficulteye.wand_of_pillaging":"Pillages equipment from enemies within a radius of %s blocks with a %s chance..",
+  "item.difficulteye.wand_of_pillaging.description": "Rarely found in Pillager Outpost chests. Using it, pillage equipment from enemies within a 3-block radius. Its range increases with the Range Boost Enchant, and its cooldown decreases with the Quick Use Enchant. It cannot be enchanted with Mending, but it can be repaired with diamonds.",
+  "item.difficulteye.wand_of_summoning": "Summoning Zombies within a radius of %s blocks",
+  "tooltip.difficulteye.wand_of_summoning": "Summon %s zombie within a radius of 4 blocks",
+  "item.difficulteye.wand_of_summoning.description": "Rarely found in Spawner Room chests. Using it, summons 5 zombies within a 4-block radius. The summon count increases with the Effect Boost Enchant, and its cooldown decreases with the Quick Use Enchant. radius. It cannot be enchanted with Mending, but it can be repaired with diamonds.",
   "item.difficulteye.wand_of_fireballs": "Fireballs Wand",
   "item.difficulteye.wand_of_frostbite": "Frostbite Wand",
   "item.difficulteye.wand_of_sandstorms": "Sandstorms Wand",
+  "tooltip.difficulteye.wand_of_sandstorms": "Blow away enemies by generating a sandstorm within a radius of %s blocks",
+  "item.difficulteye.wand_of_sandstorms.description":"Rarely found in Mineshaft chests. Using it, blow away enemies by generating a sandstorm within a radius of %s blocks, and inflict bleeding damage. Its range increases with the Range Boost Enchant, and its cooldown decreases with the Quick Use Enchant. It cannot be enchanted with Mending, but it can be repaired with diamonds.",
   "item.difficulteye.wand_of_aquatic": "Aquatic Wand",
-  "item.difficulteye.wand_of_aquatic.description":"Rarely found in shipwreck chests. Using it grants Depth Strider and Water Breathing effects, with effect levels increased by the Effect Boost enchantment and cooldown reduced by the Quick Use enchantment. Cannot be enchanted with Mending, but can be repaired with diamonds.",
-
-  "tooltip.difficulteye.wand_of_ore": "Highlight ores within a radius of %s blocks",
   "tooltip.difficulteye.wand_of_aquatic": "Grants Depth Strider %s and Water Breathing.",
-  "tooltip.difficulteye.wand_of_pillaging":"Pillages equipment from enemies within a radius of %s blocks with a %s chance..",
-  "tooltip.difficulteye.cooltime": "Cooldown: %s seconds",
+  "item.difficulteye.wand_of_aquatic.description":"Rarely found in Desert Pyramid chests. Using it, grants Depth Strider and Water Breathing effects. Effect levels increases with the Effect Boost Enchant, and its cooldown decreases with the Quick Use Enchant. radius. It cannot be enchanted with Mending, but it can be repaired with diamonds.",
 
+   "tooltip.difficulteye.cooltime": "Cooldown: %s seconds",
 
   "block.minecraft.red_terracotta.description": "Generated in desert pyramids, badlands, savanna villages, and trail ruins.",
   "block.minecraft.orange_terracotta.description": "Generated in badlands, savanna villages, and trail ruins.",
@@ -115,13 +121,17 @@
   "block.minecraft.purple_terracotta.description": "Rarely generates as terracotta flower in plains biome.",
   "block.minecraft.magenta_terracotta.description": "Rarely generates as terracotta flower in plains biome.",
 
-  "entity.difficulteye.summonerszombie": "summoner zombie",
+  "entity.difficulteye.summoners_zombie": "summoner zombie",
 
   "enchantment.difficulteye.effect_boost": "Effect boost",
   "enchantment.difficulteye.quick_use": "Quick use",
 
   "effect.difficulteye.depth_strider": "Depth Strider",
+  "effect.difficulteye.bleeding": "bleeding",
+  "effect.difficulteye.binding": "binding",
+
   "message.difficulteye.cannot_place": "Only torches can be placed here!",
+  "message.difficulteye.nospace": "There is not enough space.",
   "message.difficulteye.wrong_hold_eye": "Please hold %s!",
   "message.difficulteye.hold_eye": "you hold %s!",
   "message.difficulteye.wandore": "No ores found.",

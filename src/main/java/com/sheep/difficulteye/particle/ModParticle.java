@@ -15,6 +15,9 @@ public class ModParticle {
     public static final RegistryObject<SimpleParticleType> Range_PARTICLES =
             PARTICLE_TYPES.register("range_particle", () -> new SimpleParticleType(true));
 
+    public static final RegistryObject<SimpleParticleType> SandStom_PARTICLES =
+            PARTICLE_TYPES.register("sandstom_particle", () -> new SimpleParticleType(true));
+
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
     }
